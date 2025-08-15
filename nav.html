@@ -1,0 +1,31 @@
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <div class="nav-links">
+    <b style="padding-right:20px;font-size:26;color:white;">PCS</b>
+    <a href="../Downtime%20Homepage.html">Home</a>
+    <a href="#section1">MX6100</a>
+    <a href="#section2">MX8100</a>
+    <div class="dropdown">
+      <a href="#">KM C6100 ▼</a>
+      <div class="dropdown-content">
+        <a href="#section1">Malfunction Codes</a>
+        <a href="#section2">Jam Codes</a>
+        <a href="#section3">Sensor Locations</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">KM C7100 ▼</a>
+      <div class="dropdown-content">
+        <a href="#section1">Malfunction Codes</a>
+        <a href="#section2">Jam Codes</a>
+        <a href="#section3">Sensor Locations</a>
+      </div>
+    </div>
+  </div>
+  <form class="search-form" onsubmit="goToHeader(event)">
+    <span>C-</span>
+    <input type="text" id="searchInput" maxlength="4" placeholder="####">
+    <button type="submit">Jump</button>
+  </form>
+</div>

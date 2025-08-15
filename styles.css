@@ -1,0 +1,107 @@
+
+* {box-sizing: border-box;}
+
+body { font-family: sans-serif; }
+  header { margin-top: 1000px; } /* Just for scrolling example */
+ caption, table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+h2 {
+  scroll-margin-top: 70px; /* adjust to your navbar height */
+}
+html {
+  scroll-behavior: smooth;
+}
+th, td {
+  padding: 15px;
+}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Nav bar container */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0085CA;
+    padding: 0.5rem 1rem;
+    position: sticky; /* stays at top on scroll */
+    top: 0;
+    z-index: 1000;
+  }
+
+  /* Links in the navbar */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  .navbar a:hover {
+    background-color: #001A28;
+    border-radius: 4px;
+  }
+
+  /* Search form styling */
+  .search-form {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .search-form span {
+    background-color: #ddd;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+  .search-form input {
+    border: none;
+    maxlength: 4;
+    padding: 0.5rem;
+    width: 100px;
+    outline: none;
+  }
+  .search-form button {
+    background-color: #37bbff;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+  }
+  .search-form button:hover {
+    background-color: #006ba3;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown content hidden by default */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+  }
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
